@@ -1,35 +1,33 @@
-import { TestBed, async } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
-describe('AppComponent', () => {
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { By }           from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
+
+describe('AppComponent', function () {
+  let de: DebugElement;
+  let comp: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
+      declarations: [ AppComponent ]
+    })
+    .compileComponents();
   }));
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AppComponent);
+    comp = fixture.componentInstance;
+    de = fixture.debugElement.query(By.css('h1'));
   });
 
-  it(`should have as title 'gitApp'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('gitApp');
-  });
+  it('should create component', () => expect(comp).toBeDefined() );
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
+  it('should have expected <h1> text', () => {
     fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('gitApp app is running!');
+    const h1 = de.nativeElement;
+    expect(h1.innerText).toMatch(/angular/i,
+      '<h1> should say something about "Angular"');
   });
 });

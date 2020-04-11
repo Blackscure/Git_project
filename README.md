@@ -1,4 +1,4 @@
- # Angular QuickStart Source
+# Angular QuickStart Source
 [![Build Status][travis-badge]][travis-badge-url]
 
 **This repository is now deprecated. The Angular Quickstart project was a nice starting point for creating Angular applications. Now we recommend using the [Angular CLI](https://github.com/angular/angular-cli) to create new Angular projects.**
