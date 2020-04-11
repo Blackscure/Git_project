@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'github',
-  template: `<h1>Hello {{name}}</h1>`,
+  template: 'GITHUB COMPONENT'
 })
-export class AppComponent  { 
+export class  GithubComponent { 
     constructor() {
         console.log('Github Component Int...');
     }
