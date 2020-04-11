@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sat Apr 11 2020 20:30:29 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* src/app/app.component.ts
+
+
+Created files:
+* .autogit/logs/log-11-3-2020-20-0-20.txt
+* src/app/app.compnents.html
+
+
+Deleted files:
+
+
+Renamed files:
