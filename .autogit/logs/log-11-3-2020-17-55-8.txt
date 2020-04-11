@@ -1,0 +1,58 @@
+-------------------- Auto-Git Log --------------------
+		Sat Apr 11 2020 17:55:08 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* .editorconfig
+* .gitignore
+* README.md
+* e2e/tsconfig.json
+* package.json
+* src/app/app.component.spec.ts
+* src/app/app.module.ts
+* src/favicon.ico
+* src/index.html
+* src/main.ts
+* src/styles.css
+
+
+Created files:
+* .autogit/logs/log-11-3-2020-16-52-28.txt
+* .travis.yml
+* LICENSE
+* bs-config.e2e.json
+* e2e/app.e2e-spec.ts
+* karma-test-shim.js
+* non-essential-files.osx.txt
+* non-essential-files.txt
+* protractor.config.js
+* quickstart
+* src/systemjs-angular-loader.js
+* src/systemjs.config.extras.js
+* src/systemjs.config.js
+* src/tsconfig.json
+
+
+Deleted files:
+* angular.json
+* browserslist
+* e2e/protractor.conf.js
+* e2e/src/app.e2e-spec.ts
+* e2e/src/app.po.ts
+* karma.conf.js
+* package-lock.json
+* src/app/app-routing.module.ts
+* src/app/app.component.css
+* src/app/app.component.html
+* "src/app/components/github.components .ts"
+* src/assets/.gitkeep
+* src/environments/environment.prod.ts
+* src/environments/environment.ts
+* src/polyfills.ts
+* src/test.ts
+* tsconfig.app.json
+* tsconfig.json
+* tsconfig.spec.json
+
+
+Renamed files:
