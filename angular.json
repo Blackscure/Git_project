@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gitApp": {
+    "gitsearch": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,12 +13,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gitApp",
+            "outputPath": "dist/gitsearch",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
+            "aot": false,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -41,6 +41,7 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -62,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gitApp:build"
+            "browserTarget": "gitsearch:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gitApp:build:production"
+              "browserTarget": "gitsearch:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gitApp:build"
+            "browserTarget": "gitsearch:build"
           }
         },
         "test": {
@@ -110,15 +111,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "gitApp:serve"
+            "devServerTarget": "gitsearch:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gitApp:serve:production"
+              "devServerTarget": "gitsearch:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "gitApp"
+    }
+  },
+  "defaultProject": "gitsearch",
+  "cli": {
+    "analytics": "9258b0dd-b097-48d3-bf00-c3b28f9a17eb"
+  }
 }
