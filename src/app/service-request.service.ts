@@ -14,7 +14,7 @@ export class ServiceRequestService {
   items;
   constructor(private http: HttpClient) {
     console.log("You can now access the service");
-    this.username = "dicksonkariuki";
+    this.username = "Blackscure";
     this.user = new User("");
     this.repos = new Repository("", 0, 0, 0, new Date(), "", "");
   }
@@ -35,7 +35,7 @@ export class ServiceRequestService {
           "https://api.github.com/users/" +
             username +
             "?access_token=" +
-            "7377647d064385d967e03bfbffdc62983c19341a"
+            "0fdcb3450ba633ad60bc31f8fc5dd4ac4badaf9e"
         )
         .subscribe(data => {
           this.repos.login = data.login;
@@ -64,7 +64,7 @@ export class ServiceRequestService {
         "https://api.github.com/users/" +
           username +
           "?access_token=" +
-          "7377647d064385d967e03bfbffdc62983c19341a"
+          "0fdcb3450ba633ad60bc31f8fc5dd4ac4badaf9e"
       )
       .subscribe(data => {
         this.items = Response;
