@@ -16,5 +16,6 @@ img {
   margin-top: 2%;
 }
 body {
-  background: linear-gradient(hsl(0, 17%, 87%),rgb(77, 50, 50));
+  background:linear-gradient(lightgray,darkgray);
+
 }
