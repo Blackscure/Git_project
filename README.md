@@ -32,7 +32,7 @@ The app cannot show the owner profile without searching.
 
 ## Contact information.
 
-For more information contact the developer through this email:dicksonkariuki4@gmail.com. Also any helpful feedback on how to improve the app is welcome.
+For more information contact the developer through this email:wekesabuyahi@gmail.com. Also any helpful feedback on how to improve the app is welcome.
 
 ## Licence
 
